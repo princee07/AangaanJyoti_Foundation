@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <span className="material-icons text-orange-500 mr-1">email</span>
-              <a href="mailto:needhelp@oxpitan.com" className="hover:text-white">
+              <a href="mailto:aangangyoti@oxpitan.com" className="hover:text-white">
                 Aangangyoti@oxpitan.com
               </a>
             </div>
@@ -45,12 +45,11 @@ export default function Navbar() {
             <img
               src="/images/logo.png"
               alt="Aangan Jyoti Logo"
-              className="h-28 w-auto"
+              className="h-16 w-auto"
             />
-           
           </div>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation Links */}
           <nav className="hidden md:flex space-x-6">
             <a href="#home" className="text-gray-600 hover:text-orange-500 font-bold text-lg">
               Home
@@ -103,27 +102,37 @@ export default function Navbar() {
         {isOpen && (
           <ul className="md:hidden bg-gray-700 text-white space-y-4 px-6 py-4">
             <li>
-              <a href="#" className="block hover:text-yellow-500">
+              <a href="#home" className="block hover:text-yellow-500 font-bold text-lg">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="block hover:text-yellow-500">
-                About
+              <a href="#causes" className="block hover:text-yellow-500 font-bold text-lg">
+                Our Causes
               </a>
             </li>
             <li>
-              <a href="#causes" className="block hover:text-yellow-500">
-                Causes
+              <a href="#events" className="block hover:text-yellow-500 font-bold text-lg">
+                Events
               </a>
             </li>
             <li>
-              <a href="#volunteers" className="block hover:text-yellow-500">
-                Volunteers
+              <a href="#shop" className="block hover:text-yellow-500 font-bold text-lg">
+                Shop
               </a>
             </li>
             <li>
-              <a href="#contact" className="block hover:text-yellow-500">
+              <a href="#news" className="block hover:text-yellow-500 font-bold text-lg">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="#pages" className="block hover:text-yellow-500 font-bold text-lg">
+                Pages
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="block hover:text-yellow-500 font-bold text-lg">
                 Contact
               </a>
             </li>

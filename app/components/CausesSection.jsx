@@ -52,9 +52,13 @@ export default function CausesSection() {
             >
               {/* Image Section */}
               <div
-                className="relative h-64 bg-cover bg-center group-hover:blur-sm transition duration-300"
+                className="relative h-64 bg-cover bg-center transition duration-300 group"
                 style={{ backgroundImage: `url(${cause.image})` }}
               >
+                {/* Blur Effect */}
+                <div className="absolute inset-0  bg-opacity-30 group-hover:backdrop-blur-sm transition duration-300"></div>
+
+                {/* Progress Bar */}
                 <div
                   className={`absolute bottom-0 left-0 w-full h-6 ${cause.buttonColor}`}
                   style={{ width: `${cause.progress}%` }}
@@ -65,8 +69,8 @@ export default function CausesSection() {
                     : `${cause.progress}%`}
                 </div>
 
-                {/* Centered Donate Button */}
-                <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
+                {/* Centered Donate Button (Visible on Hover) */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
                   <button className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">
                     Donate
                   </button>
@@ -88,7 +92,7 @@ export default function CausesSection() {
                   </div>
                 </div>
                 <button
-                  className={`text-white px-4 py-2 rounded ${cause.buttonColor} hover:opacity-90`}
+                  className={`text-white px-4 py-2 rounded ${cause.buttonColor} `}
                 >
                   Read More
                 </button>
